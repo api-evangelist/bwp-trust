@@ -1,0 +1,23 @@
+name: BWP Trust MCP server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+status: none
+source: https://bwptrust.com.au/
+description: No official MCP server was found for BWP Trust, and no candidate tool list can be derived because the provider
+  publishes no OpenAPI or other API contract. BWP Trust is an ASX-listed Australian REIT whose website is an investor-relations
+  site with no developer portal.
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+evidence:
+- url: https://bwptrust.com.au/.well-known/mcp.json
+  status: 200
+  note: soft 404 (HTML "404 - Page" body), not an MCP document
+- url: https://bwptrust.com.au/.well-known/mcp/server-card.json
+  status: 200
+  note: soft 404 (HTML "404 - Page" body), not an MCP document
+- search: '"BWP Trust" API OR "MCP server" OR developer'
+  note: web search 2026-10-21 returned no BWP Trust MCP server, API or developer resources
+tools: []

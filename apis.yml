@@ -1,23 +1,78 @@
 aid: bwp-trust
+
 name: BWP Trust
-description: 'BWP Trust is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: BWP Trust ("BWP" or "the Trust") is an Australian real estate investment trust, established and listed on the
+  Australian Securities Exchange (ASX) in 1998, that invests in and manages commercial properties throughout Australia. It
+  is the largest owner of Bunnings Warehouse sites in Australia, alongside large format retail showroom and industrial properties.
+  Its website (bwptrust.com.au) is an investor-relations site; it publishes no developer portal, API documentation or public
+  API.
+
 url: https://raw.githubusercontent.com/api-evangelist/bwp-trust/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Real Estate
+- REIT
+- Commercial Property
+- Investor Relations
+- Australia
+- ASX
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://bwptrust.com.au/site/irmcustomizationfile/57/banner-new.jpg
+
 common:
+- type: Hosts
+  url: hosts/bwp-trust-hosts.yml
+- type: DomainSecurity
+  url: security/bwp-trust-domain-security.yml
 - type: Website
   url: https://bwptrust.com.au/
+- type: Support
+  url: https://bwptrust.com.au/site/contact-us
+- type: PrivacyPolicy
+  url: https://bwptrust.com.au/site/utilities/privacy
+- type: InvestorRelations
+  url: https://bwptrust.com.au/site/investor-centre
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified as BWP Trust (title "BWP Trust", meta description naming the ASX-listed REIT). No developer portal,
+    docs, API, GitHub, pricing or terms page found on the site.
+  evidence:
+  - url: https://bwptrust.com.au/
+    status: 200
+  - url: https://bwptrust.com.au/site/contact-us
+    status: 200
+  - url: https://bwptrust.com.au/site/utilities/privacy
+    status: 200
+  - url: https://bwptrust.com.au/site/investor-centre
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

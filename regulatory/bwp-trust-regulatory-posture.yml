@@ -1,0 +1,63 @@
+generated: '2026-10-21'
+method: searched
+source: https://bwptrust.com.au/site/utilities/privacy
+note: >-
+  BWP Trust is an ASX-listed property trust (managed by BWP Management Limited) with no public API. Its
+  only published legal page is the Privacy Policy, governed by the Australian Privacy Act / Australian
+  Privacy Principles, last updated 11 April 2014. Signals not spoken to by that page (subprocessor list,
+  data residency, incident notification, AI transparency, GPC, etc.) are deliberately not recorded.
+signals:
+  data_subject_request:
+    url: https://bwptrust.com.au/site/utilities/privacy
+    section: Access to and correction of personal information
+    channel: Privacy Officer, BWP Management Limited (postal); complaints@bwptrust.com.au for complaints
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner
+    evidence:
+    - source: https://bwptrust.com.au/site/utilities/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: '17. So long as your request to access your personal information is in accordance with the Australian Privacy Principles, then we will give you access to that information through our Privacy Officer:'
+    - source: https://bwptrust.com.au/site/utilities/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: '18. Inaccurate information will be corrected upon receiving advice to this effect from you.'
+    - source: https://bwptrust.com.au/site/utilities/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: '19. If we refuse your request to access or correct your personal information we will provide you with reasons for our refusal.'
+    - source: https://bwptrust.com.au/site/utilities/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'If you are not satisfied with the outcome of this procedure, then you can complain to the Office of the Australian Information Commissioner on 1300 363 992'
+    note: >-
+      Establishes access and correction rights under the Australian Privacy Principles, routed through a
+      named Privacy Officer, with reasons given on refusal and escalation to the OAIC. No deletion or
+      portability right and no response deadline is stated.
+  data_retention:
+    url: https://bwptrust.com.au/site/utilities/privacy
+    section: Security and storage
+    evidence:
+    - source: https://bwptrust.com.au/site/utilities/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: '12. Personal information is de-identified or destroyed securely when no longer required by us.'
+    - source: https://bwptrust.com.au/site/utilities/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: '13. BWP Trust retains the information you provide to us including your contact and credit card details to enable us to verify transactions and customer details and to retain adequate records for legal and accounting purposes.'
+    note: >-
+      A purpose-bound retention statement (kept for verification and legal/accounting records, then
+      de-identified or destroyed). No retention period is given.
+  subprocessors:
+    url: https://bwptrust.com.au/site/utilities/privacy
+    section: Disclosure of personal information
+    list_published: false
+    evidence:
+    - source: https://bwptrust.com.au/site/utilities/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'our service providers including insurers, insurance brokers, solicitors, mailing houses, accountants, management consultants, couriers, data processors, technology consultants, website developers and houses, banks and financial institutions, marketing agencies, market researchers, security firms and auditors;'
+    note: >-
+      Discloses CATEGORIES of recipients (including "data processors" and the unit registry) under
+      "9. We may also share your personal information with:"; no named subprocessor list is published.

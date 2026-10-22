@@ -1,0 +1,11 @@
+name: BWP Trust packages
+generated: '2026-10-21'
+method: none
+note: BWP Trust is an ASX-listed REIT whose site (bwptrust.com.au) is investor-relations only; no SDK, CLI or client library is published. Checked npm search "bwptrust" (0 results), registry.npmjs.org/bwp-trust (404), pypi.org/pypi/bwptrust and bwp-trust (404), GitHub user/org bwptrust (404).
+checked:
+- https://registry.npmjs.org/-/v1/search?text=bwptrust
+- https://registry.npmjs.org/bwp-trust
+- https://pypi.org/pypi/bwptrust/json
+- https://pypi.org/pypi/bwp-trust/json
+- https://api.github.com/users/bwptrust
+packages: []
